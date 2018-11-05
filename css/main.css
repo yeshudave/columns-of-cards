@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5;
 }
 
@@ -24,13 +24,18 @@ section {
 
 img {
   display: block;
-  width: 100px;
+  width: 100%;
   margin: 0 auto 1.5rem;
   padding: .75rem 0 0;
 }
 
+section img {
+  width: 100px;
+}
+
 ul {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   list-style-type: none;
   padding: 1.5rem;
@@ -42,6 +47,7 @@ h2 {
   text-align: center;
   font-size: 2rem;
   margin: 0;
+  padding: 1rem 0 0;
 }
 
 .one {
@@ -68,6 +74,11 @@ h2 {
 h3 {
   font-weight: bold;
   padding: 0 .75rem;
+  margin: 0;
+}
+
+dl {
+  margin: 0 0 1.5rem;
 }
 
 dt {
@@ -76,11 +87,15 @@ dt {
 }
 
 dd {
+  display: inline-block;
   margin: 0;
-  padding: 0 .75rem;;
+  padding: 0 .75rem;
 }
 
 li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 25%;
 }
 
@@ -88,11 +103,15 @@ div {
   padding: .75rem;
 }
 
-a {
+.btn {
   display: block;
   text-decoration: none;
   color: white;
   padding: .75rem;
   background-color: #333;
   border-radius: 6px;
+}
+
+.btn:hover {
+  background-color: black;
 }
